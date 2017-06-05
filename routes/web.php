@@ -17,3 +17,10 @@ Route::get('/', function () {
     dd($text);
     return view('welcome');
 });
+
+
+Route::prefix('bot')
+    ->group(function() {
+        Route::get('/webhook', 'BotController@subscribe');
+        Route::post('/webhook', 'BotController@receiveMessage');
+    });
