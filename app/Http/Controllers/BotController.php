@@ -37,16 +37,16 @@ class BotController extends Controller
         $callSendApi->make($text->message('Você digitou: '. $message));
 
         $message = new Image($senderId);
-        $callSendApi->make($message->message('http://fathomless-castle-56481.herokuapp.com/img/homer.gif');
+        $callSendApi->make($message->message('http://fathomless-castle-56481.herokuapp.com/img/homer.gif'));
 
         $message = new Audio($senderId);
-        $callSendApi->make($message->message('http://fathomless-castle-56481.herokuapp.com/audio/woohoo.wav');
+        $callSendApi->make($message->message('http://fathomless-castle-56481.herokuapp.com/audio/woohoo.wav'));
 
         $message = new File($senderId);
-        $callSendApi->make($message->message('http://fathomless-castle-56481.herokuapp.com/file/file.zip');
+        $callSendApi->make($message->message('http://fathomless-castle-56481.herokuapp.com/file/file.zip'));
 
         $message = new Video($senderId);
-        $callSendApi->make($message->message('http://fathomless-castle-56481.herokuapp.com/video/video.mp4');
+        $callSendApi->make($message->message('http://fathomless-castle-56481.herokuapp.com/video/video.mp4'));
 
         return '';
     }
