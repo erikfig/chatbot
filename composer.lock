@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "327c12b5461b3ce9172ae90c8ce75aa7",
+    "content-hash": "6ad24988e8ecd9e827655d326915a63b",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -108,16 +108,16 @@
         },
         {
             "name": "erikfig/code-facebook-bot-sdk",
-            "version": "dev-master",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erikfig/code-facebook-bot-sdk.git",
-                "reference": "9ce0e6f936d4a661ec83b29d83345da1de85def6"
+                "reference": "d96b4fc7227394c37df495245e5690b8e890e13c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erikfig/code-facebook-bot-sdk/zipball/9ce0e6f936d4a661ec83b29d83345da1de85def6",
-                "reference": "9ce0e6f936d4a661ec83b29d83345da1de85def6",
+                "url": "https://api.github.com/repos/erikfig/code-facebook-bot-sdk/zipball/d96b4fc7227394c37df495245e5690b8e890e13c",
+                "reference": "d96b4fc7227394c37df495245e5690b8e890e13c",
                 "shasum": ""
             },
             "require": {
@@ -143,7 +143,7 @@
                     "email": "erik.figueiredo@gmail.com"
                 }
             ],
-            "time": "2017-06-05 11:42:17"
+            "time": "2017-06-12T03:41:11+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -3626,9 +3626,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "erikfig/code-facebook-bot-sdk": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
