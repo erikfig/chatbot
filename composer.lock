@@ -108,16 +108,16 @@
         },
         {
             "name": "erikfig/code-facebook-bot-sdk",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erikfig/code-facebook-bot-sdk.git",
-                "reference": "d96b4fc7227394c37df495245e5690b8e890e13c"
+                "reference": "cc3e11de8f7068c103f7544c34b8c9e7af878f83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erikfig/code-facebook-bot-sdk/zipball/d96b4fc7227394c37df495245e5690b8e890e13c",
-                "reference": "d96b4fc7227394c37df495245e5690b8e890e13c",
+                "url": "https://api.github.com/repos/erikfig/code-facebook-bot-sdk/zipball/cc3e11de8f7068c103f7544c34b8c9e7af878f83",
+                "reference": "cc3e11de8f7068c103f7544c34b8c9e7af878f83",
                 "shasum": ""
             },
             "require": {
@@ -143,7 +143,7 @@
                     "email": "erik.figueiredo@gmail.com"
                 }
             ],
-            "time": "2017-06-12T03:41:11+00:00"
+            "time": "2017-06-12T11:42:39+00:00"
         },
         {
             "name": "erusev/parsedown",
