@@ -8,6 +8,8 @@ use CodeBot\Message\File;
 use CodeBot\Message\Image;
 use CodeBot\Message\Video;
 use CodeBot\SenderRequest;
+use CodeBot\Element\Button;
+use CodeBot\TemplatesMessage\ButtonsTemplate;
 use CodeBot\WebHook;
 use CodeBot\Message\Text;
 use Illuminate\Http\Request;
@@ -47,6 +49,11 @@ class BotController extends Controller
 
         $message = new Video($senderId);
         $callSendApi->make($message->message('http://fathomless-castle-56481.herokuapp.com/video/video.mp4'));
+
+        $message = new ButtonsTemplate($senderId);
+        $message->add(new Button('web_url', 'Code.Education', 'https://code.education'));
+        $message->add(new Button('web_url', 'Google', 'https://www.google.com.br'));
+        $callSendApi->make($message->message('Que tal testarmos a abertura de um site?'));
 
         return '';
     }
