@@ -28,7 +28,14 @@ Route::prefix('api/v1')
         Route::post('/postbacks/get-started-button/{id}', 'PostbacksController@setGetStartedButton');
         Route::delete('/postbacks/get-started-button', 'PostbacksController@removeGetStartedButton');
         Route::resource('/postbacks', 'PostbacksController');
+
         Route::resource('/messages', 'MessagesController');
+        Route::post('/messages/{id}/product', 'MessagesController@product');
+        Route::delete('/messages/{id}/product/{productId}', 'MessagesController@deleteProduct');
+        Route::get('/messages/{id}/product', 'MessagesController@getProduct');
+
+        Route::resource('/elements', 'ElementsController');
+        Route::resource('/products', 'ProductsController');
     });
 
 Route::prefix('api/v1')

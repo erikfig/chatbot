@@ -34,6 +34,11 @@
                 <option value="image">Imagem</option>
                 <option value="video">Vídeo</option>
               </optgroup>
+              <optgroup label="Templates">
+                <option value="buttons">Botões</option>
+                <option value="generic">Slider de produtos</option>
+                <option value="list">Lista de produtos</option>
+              </optgroup>
             </select>
           </div>
           <div id="messageField" class="input-field">
