@@ -25,7 +25,7 @@ class SuggestionsRepository
     public function create($senderId, $message)
     {
         Suggestions::create([
-            'user_face+id' => $senderId,
+            'user_face_id' => $senderId,
             'suggestion' => $message
         ]);
     }
