@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "35c840d9dfe9c384537e7e8bab28782d",
+    "content-hash": "d301040ec63472977824dda81a041164",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -188,16 +188,16 @@
         },
         {
             "name": "erikfig/code-facebook-bot-sdk",
-            "version": "v1.3.2",
+            "version": "v1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erikfig/code-facebook-bot-sdk.git",
-                "reference": "ac9e3525facc1e0f525046eadebac7ee75b8e25c"
+                "reference": "9db8752dc35e98be82743b2433268afde6a0ee6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erikfig/code-facebook-bot-sdk/zipball/ac9e3525facc1e0f525046eadebac7ee75b8e25c",
-                "reference": "ac9e3525facc1e0f525046eadebac7ee75b8e25c",
+                "url": "https://api.github.com/repos/erikfig/code-facebook-bot-sdk/zipball/9db8752dc35e98be82743b2433268afde6a0ee6b",
+                "reference": "9db8752dc35e98be82743b2433268afde6a0ee6b",
                 "shasum": ""
             },
             "require": {
@@ -223,7 +223,7 @@
                     "email": "erik.figueiredo@gmail.com"
                 }
             ],
-            "time": "2017-06-19T14:20:36+00:00"
+            "time": "2017-07-26T22:39:31+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -1182,6 +1182,56 @@
                 "random"
             ],
             "time": "2017-03-13T16:27:32+00:00"
+        },
+        {
+            "name": "predis/predis",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-16T16:22:20+00:00"
         },
         {
             "name": "psr/http-message",

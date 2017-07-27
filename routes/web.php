@@ -36,6 +36,8 @@ Route::prefix('api/v1')
 
         Route::resource('/elements', 'ElementsController');
         Route::resource('/products', 'ProductsController');
+
+        Route::resource('/suggestions', 'SuggestionsController');
     });
 
 Route::prefix('api/v1')
