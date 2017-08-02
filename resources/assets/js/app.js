@@ -5,6 +5,8 @@ import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 import routes from './routes'
 import VuexStore from './states'
+import Loader from './components/Loader'
+import Menu from './components/Menu'
 
 Vue.use(VueRouter)
 Vue.use(Vuex)
@@ -13,11 +15,13 @@ const router = new VueRouter({
   routes
 })
 
+const store = new Vuex.Store(VuexStore)
+
 router.beforeEach((to, from, next) => {
   let requiresAuth = to.meta.requiresAuth || false;
 
   if (requiresAuth) {
-    return window.axios.get('/api/v1/users/me').then((res) => {
+    return store.dispatch('getCurrentUser').then((res) => {
       if (res.data.id === undefined) {
         return next({path: 'login'});
       }
@@ -27,11 +31,13 @@ router.beforeEach((to, from, next) => {
   return next();
 })
 
-const store = new Vuex.Store(VuexStore)
-
 const app = new Vue({
   el: '#app',
-  template: '<div><router-view class="container"></router-view></div>',
+  components: {
+    loader: Loader,
+    meuMenu: Menu,
+  },
+  template: `<div><router-view class="container"></router-view><loader></loader><meu-menu></meu-menu></div>`,
   router,
   store
 });

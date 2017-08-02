@@ -34,23 +34,23 @@
             </div>
         </nav>
 
-        <ul id="slide-out" class="side-nav">
-            <li>
-                <div class="userView">
-                    <div class="background"><img src="img/leaf_background.jpg" alt=""></div>
-                    <a><img src="https://secure.gravatar.com/avatar/beef4a109b5744b8b51537c0136f7e3b" alt="" class="circle"></a>
-                    <a><span class="white-text name">Erik Figueiredo</span></a>
-                    <a href="https://github.com/erikfig"><span class="white-text email">@erikfig</span></a>
+        <div id="app">
+            <div class="preloader-container">
+                <div class="preloader-wrapper big active">
+                    <div class="spinner-layer spinner-blue-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div><div class="gap-patch">
+                            <div class="circle"></div>
+                        </div><div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
                 </div>
-            </li>
-        </ul>
-        <div id="app"></div>
+            </div>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-        <script>
-          $('#nav-mobile').sideNav();
-        </script>
+        </div>
+
         <script src="{{mix('/js/app.js')}}"></script>
     </body>
 </html>
